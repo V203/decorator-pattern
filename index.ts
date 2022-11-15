@@ -1,61 +1,18 @@
-interface IcarModification {
-    specs(): string;
-}
 
-export class Car implements IcarModification{
-    specs(): string {
-        return `Make: BMW`
-    }
-}
+import Paint from "./Paint";
+import Rims from "./Rims";
+import {Car} from "./Car"
 
-
-// class Pain 
-
-
-// class Modify implements IcarModification{
-    
-//     constructor(private icarModification:IcarModification){
-    
-
-//     }
-
-//     specs(): string {
-//         return `out ${this.icarModification.specs()}\n`
-//     }
-// }
-
-
-class Paint implements IcarModification{
-//   private  icarModification: IcarModification
-
-  constructor(private icarModification: IcarModification){
-      
-
-  }
-    specs() {
-    //    console.log( this.icarModification.specs());       
-        return " Chrome paint " + this.icarModification.specs()
-    }
-    
-}
-
-class Rims implements IcarModification{
-    constructor(private icarModification: IcarModification){
-
-    }
-    specs():string {
-        console.log();
-        
-        return " 16 inch rims " +  this.icarModification.specs()
-
-    }
-}
 
 let bmw = new Car();
+console.log(bmw.specs());// prints : make : BMW
+
 let paint = new Paint(bmw);
-let rims = new Rims(paint)
+console.log(paint.specs());// prints :| Chrome paint| make : BMW
 
-
-// console.log(bmw.specs());
+let rims = new Rims(paint) //prints :| Chrome paint| make : BMW| 16 inch rims ?
 console.log(rims.specs());
+
+
+
 
