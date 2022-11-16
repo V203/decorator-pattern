@@ -1,3 +1,5 @@
+[![Node.js CI](https://github.com/V203/decorator-pattern/actions/workflows/node.js.yml/badge.svg)](https://github.com/V203/decorator-pattern/actions/workflows/node.js.yml)
+
 # Decorator pattern
 
 
