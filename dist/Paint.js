@@ -5,7 +5,7 @@ class Paint {
         this.icarModification = icarModification;
     }
     specs() {
-        return " Chrome paint " + this.icarModification.specs();
+        return " | Chrome paint " + this.icarModification.specs() + " | ";
     }
 }
 exports.default = Paint;

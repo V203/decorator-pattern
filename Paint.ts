@@ -9,5 +9,7 @@ export default class Paint implements IcarModification{
         
           return " | Chrome paint " + this.icarModification.specs() +" | "
       }
+
+     
       
-  }
+  }     

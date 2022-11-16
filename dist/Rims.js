@@ -6,7 +6,7 @@ class Rims {
     }
     specs() {
         console.log();
-        return " 16 inch rims " + this.icarModification.specs();
+        return "| 16 inch rims " + this.icarModification.specs() + "|";
     }
 }
 exports.default = Rims;
